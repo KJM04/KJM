@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[김지민] HTML, CSS를 이용해서 넷플릭스 사이트 만들기</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Diphylleia&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="/">
+                    <img
+                    id="logo"    
+                    alt="netflix logo"
+                    src="./images/netflix-logo.png">
+                </a>
+            </div>
+            <ul>
+                <li><a href="#">홈</a></li>
+                <li><a href="#">시리즈</a></li>
+                <li><a href="#">영화</a></li>
+                <li><a href="#">NEW! 요즘 대세 콘텐츠</a></li>
+                <li><a href="#">내가 찜한 리스트</a></li>
+                <li><a href="#">언어별로 찾아보기</a></li>
+            </ul>
+            <div class="right-section">
+                <div class="search">
+                    <a href="/">
+                        <img id="search" alt="search-icon" src="./svg/search.svg">
+                    </a>
+                </div>
+                <div class="notification">
+                    <a href="/">
+                        <img id="notification" alt="notification" src="./svg/notification.svg">
+                    </a>
+                </div><div class="user-profile">
+                    <a href="/">
+                       <img id="user-profile" alt="user-profile" src="./images/netflix-avatar.png">
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main> 
+        <!-- banner -->
+        <div class="banner">
+            <div class="banner_contents">
+                <h1 class="banner_title">얼터드 카본</h1>
+                    <div class="banner_btn">
+                        <div class="banner_btn_start">
+                            <a href="/">
+                                <button>
+                                    <img id="play" alt="play" src="./svg/play.svg">
+                                    재생
+                                </button>
+                            </a>
+                        </div>
+                        <div class="banner_btn_info">
+                            <a href="/">
+                                 <button>
+                                    <img id="info" alt="info" src="./svg/info.svg">
+                                    상세 정보
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+            </div>
+                <p class="banner_description">
+                    250년 전에 죽음으로 봉인된 죄수.
+                    <br />
+                    그가 새로운 육체를 얻어 되살아난다.
+                    <br />
+                    이제 부활의 대가를 치를 순간.
+                    <br />
+                    비밀과 음모의 미궁 속에서, 기이한 살인 사건을 해결해야 한다.
+                </p>
+            </div>
+        </div>
+
+        <!-- NETFLIX ORIGINAL -->
+        <div class="row">
+            <h2>오직 넷플릭스에서</h2>
+            <div class="row_posters">
+              <img
+                src="./images/large-movie1.jpg"
+                alt="movie"
+                class="row_poster row_poster-Large"
+                />
+              <img
+                src="./images/large-movie2.jpg"
+                alt="movie"
+                class="row_poster row_poster-Large"
+                />
+                <img
+                src="./images/large-movie3.jpg"
+                alt="movie"
+                class="row_poster row_poster-Large"
+                />
+                <img
+                src="./images/large-movie4.jpg"
+                alt="movie"
+                class="row_poster row_poster-Large"
+                />
+                <img
+                src="./images/large-movie5.jpg"
+                alt="movie"
+                class="row_poster row_poster-Large"
+                />
+                <img
+                src="./images/large-movie6.jpg"
+                alt="movie"
+                class="row_poster row_poster-Large"
+                />
+                <img
+                src="./images/large-movie7.jpeg"
+                alt="movie"
+                class="row_poster row_poster-Large"
+                />
+                <img
+                src="./images/large-movie8.png"
+                alt="movie"
+                class="row_poster row_poster-Large"
+                />
+            </div>
+        </div>
+
+        <!-- TRENDING NOW -->
+        <div class="row">
+            <h2>지금 뜨는 콘텐츠</h2>
+            <div class="row_posters">
+                <img src="images/movie-trending1.jpg" alt="" class="row_poster" />
+                <img src="images/movie-trending2.png" alt="" class="row_poster" />
+                <img src="images/movie-trending3.png" alt="" class="row_poster" />
+                <img src="images/movie-trending4.jpg" alt="" class="row_poster" />
+                <img src="images/movie-trending5.png" alt="" class="row_poster" />
+                <img src="images/movie-trending6.png" alt="" class="row_poster" />
+                <img src="images/movie-trending7.png" alt="" class="row_poster" />
+                <img src="images/movie-trending8.png" alt="" class="row_poster" >
+            </div>
+        </div>
+
+        <!-- TOP RATED -->
+        <div class="row">
+            <h2>주간 넷플릭스 TOP 10</h2>
+            <div class="row_posters">
+                <img src="images/movie-top1.png" alt="" class="row_poster">
+                <img src="images/movie-top2.png" alt="" class="row_poster">
+                <img src="images/movie-top3.jpg" alt="" class="row_poster">
+                <img src="images/movie-top4.jpg" alt="" class="row_poster">
+                <img src="images/movie-top5.png" alt="" class="row_poster">
+                <img src="images/movie-top6.png" alt="" class="row_poster">
+                <img src="images/movie-top7.png" alt="" class="row_poster">
+                <img src="images/movie-top8.jpg" alt="" class="row_poster">
+            </div>
+        </div>
+    </main>
+    <footer id="footer">
+        <p>Copyright</p>
+    </footer>
+</body>
+</html>
